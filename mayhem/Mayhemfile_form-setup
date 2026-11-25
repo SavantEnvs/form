@@ -1,0 +1,10 @@
+project: savantenvs/form
+target: form-setup
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/form-setup/testsuite
+# The /mayhem/mayhem/<target>/*.frm argument is the fixed driver script FORM only READS.
+# mayhem-lint: ok-image-path
+cmds:
+  - cmd: /mayhem/mayhem/build-fuzz/form_script -S @@ /mayhem/mayhem/form-setup/setup.frm
+    timeout: 5

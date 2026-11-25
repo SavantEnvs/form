@@ -1,0 +1,5 @@
+SmallSize 500K
+LargeSize 2M
+ScratchSize 200K
+TermsInSmall 10K
+SortIOSize 100K

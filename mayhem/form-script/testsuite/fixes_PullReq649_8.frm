@@ -1,0 +1,5 @@
+Local expr = 1;
+.sort
+$a = 1;
+moduleoption maximum $a;
+.end

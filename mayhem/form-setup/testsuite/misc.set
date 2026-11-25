@@ -1,0 +1,7 @@
+*  a comment
+MaxNumberSize 100
+FunctionLevels 10
+MaxWildcards 50
+IndentSpace 2
+NoSpacesInNumbers ON
+OldOrder OFF

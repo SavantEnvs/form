@@ -1,0 +1,2 @@
+# Keep local build trees out of the build context (build.sh recreates them in the image).
+mayhem/build-*/

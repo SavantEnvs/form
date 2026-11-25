@@ -1,0 +1,7 @@
+ConstIndex 64
+ContinuationLines 20
+CommentChar *
+DotChar _
+BracketIndexSize 1000
+CompressSize 90000
+Parentheses 200

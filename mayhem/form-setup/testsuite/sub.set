@@ -1,0 +1,9 @@
+SubSmallSize 100K
+SubLargeSize 1M
+SubTermsInSmall 5K
+SubSortIOSize 32K
+FilePatches 64
+LargePatches 128
+HideSize 100K
+NumStoreCaches 2
+SizeStoreCache 32K

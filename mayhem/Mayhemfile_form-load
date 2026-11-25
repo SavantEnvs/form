@@ -1,0 +1,12 @@
+project: savantenvs/form
+target: form-load
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/form-load/testsuite
+# The /mayhem/mayhem/<target>/*.frm argument is the fixed driver script FORM only READS.
+# mayhem-lint: ok-image-path
+cmds:
+  - cmd: /mayhem/mayhem/build-fuzzw/form_fileinput /mayhem/mayhem/form-load/load.frm @@
+    timeout: 30
+    env:
+      MFUZZ_COMPAT_LEVEL: '2'
